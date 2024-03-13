@@ -1,7 +1,12 @@
-import './styles/style.scss';
+import { Counter } from "./components/Counter";
+import { RepositoryList } from "./components/RepositoryList";
+import "./styles/style.scss";
 
 export function App() {
-    return <section className='square-container'>
-                <h1>Hello!</h1>
-           </section>
+	return (
+		<>
+			<RepositoryList />
+			<Counter />
+		</>
+	);
 }
